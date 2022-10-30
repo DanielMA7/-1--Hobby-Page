@@ -1,0 +1,23 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #CACDCC;
+    color: #35484F;
+    font-family: Ubuntu;
+}
+
+.h-container {
+    margin-top: 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.09);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.main-body {
+    text-align: center;
+}
+
+h1 {
+    margin: 0%;
+}
+
