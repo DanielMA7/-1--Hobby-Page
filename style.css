@@ -1,7 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-color: #CACDCC;
+    background-color: #ffffff;
     color: #35484F;
     font-family: Ubuntu;
 }
@@ -15,12 +15,37 @@ body {
 
 .main-body {
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.donut {
-    width: 550px;
+.donut-img {
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 10px;
 }
+
+.house-img {
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.room-img {
+    width: 300px;
+    border-radius: 20px;
+}
+
 h1 {
     margin: 0%;
+}
+
+.p1 { 
+    width: 60%;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
 }
 
