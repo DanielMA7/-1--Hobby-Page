@@ -68,8 +68,17 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    background: #444444
 }
 
+.section1 {
+    border-radius: 4px;
+    padding: 10px;
+}
+.section2 {
+    border-radius: 4px;
+    padding: 10px;
+}
 .h2-container {
     background-color: #4753C5;
     border-radius: 10px;
@@ -115,10 +124,6 @@ button {
 .app-text {
     font-size: 20px;
     font-weight: bold;
-}
-
-body {
-    background-color: #222222;
 }
 
 .widget {
