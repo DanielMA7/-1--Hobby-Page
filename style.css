@@ -89,7 +89,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    gap: 20vh;
+    gap: 5vh;
 }
 
 .blender-container {
