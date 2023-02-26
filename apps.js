@@ -13,8 +13,8 @@ function formatDate(date) {
     return `${DAYS[date.getDay()]}, ${date.getDate()} ${MONTHS[(date.getMonth())]} ${date.getFullYear()}`;
 }
 
-setInterval(() => {
+/*setInterval(() => {
     const now = new Date();
 
     dateElement.textContent = formatDate(now);
-}, 200)
+}, 200) */
