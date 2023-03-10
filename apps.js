@@ -18,3 +18,20 @@ function formatDate(date) {
 
     dateElement.textContent = formatDate(now);
 }, 200) */
+
+const timeWidget = document.getElementById("time-widget")
+let widgetOpen = false
+
+function loadTimeWidget(){
+    if(widgetOpen == false){
+        timeWidget.classList.add("widget-after")
+        widgetOpen = true
+       
+    }else{
+        timeWidget.classList.remove("widget-after")
+        widgetOpen = false
+    }
+
+}
+
+timeWidget.addEventListener("click", loadTimeWidget)

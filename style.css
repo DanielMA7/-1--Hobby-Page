@@ -7,29 +7,31 @@ body {
     background-color: #222222;
     color: white;
     font-family: Ubuntu, sans-serif;
+    display: grid;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .h-container {
     box-shadow: 0 .125rem .25rem #2a2d31;
     margin-bottom: 20px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .main-body {
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
+    place-self: center;
     
 }
 
@@ -51,7 +53,7 @@ header {
 
 .p1 { 
     width: 60%;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .section1-head, .section2-head {
@@ -60,8 +62,8 @@ header {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0 .125rem .25rem #2a2d31;
 }
 
@@ -81,8 +83,8 @@ header {
     border-radius: 10px;
     text-align: center;
     margin-bottom: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0 .125rem .25rem #2a2d31;
     margin-bottom: 20px;
 }
@@ -95,14 +97,15 @@ header {
 }
 
 .blender-container {
-    width: max-content;
     height: max-content;
+    width: 180px;
     background-color: #4753C5;
-    padding-top: 20px;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    list-style-position: inside;
 }
 
 .container-text {
@@ -113,7 +116,10 @@ ul {
     text-align: start;
     line-height: 25px;
     list-style: circle; 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 a {
@@ -126,6 +132,7 @@ button {
     border-style: none;
     height: 45px;
     border-radius: 7px;
+    padding: 10px;
 }
 
 .app-text {
@@ -134,13 +141,32 @@ button {
 }
 
 .widget {
-    font-size: 1rem;
-    padding: 12px;
     color: #ffffff;
-    width: 400px;
+    width: 65px;
+    height: 65px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    margin-right: 10px;
+    background-color: #444444;
+    border-left-color: #4753C5;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-radius: 10px 0px 0px 10px;
+    left: 100%;
+    top: 80%;
+    position: sticky;
+}
+.widget-after {
+    color: #ffffff;
+    width: 250px;
+    height: 65px;
+    font-family: 'Inter', sans-serif;
+    background-color: #444444;
+    border-left-color: #4753C5;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-radius: 10px 0px 0px 10px;
+    left: 99%;
+    top: 80%;
+    position: sticky;
 }
 
 
@@ -149,9 +175,10 @@ button {
     font-size: 1.25em;
 }
 
+
 @media only screen and (max-width: 1000px){
     .main-body {
-        width: 100%;
+        width: 90%;
         height: auto;
         display: flex;
         align-items: center;
@@ -172,7 +199,7 @@ button {
         gap: 20px;
     }
     .house-img, .desert-img, .room-img {
-        width: 100%;
+        width: 85%;
         height: auto;
     }
     .apps-container {
@@ -180,6 +207,59 @@ button {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
+    .blender-container {
+        width: 40%;
+        height: auto;
 
+    }
+    
+    .section1-head, .section2-head, .h2-container {
+        width: 85%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .p1 {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: start;
+    }
+    .app-text {
+        font-size: 25px;
+    }
+    li {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    a {
+        font-size: 18px;
+    }
+    button {
+        min-width: 90%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .section1, .section2 {
+        width: 85%;
+    }
+    .widget {
+        border-radius: 10px 10px 10px 10px;
+        top: 90%;
+    }
 }
